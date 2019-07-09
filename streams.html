@@ -1,0 +1,69 @@
+﻿<html>
+<head>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+
+</head>
+<header>
+<h1>FrankThePegasus</h1>
+<img id="icon" alt="" src="frankicon.jpg" height="200px" width="200px"style="right="200px"/>
+<nav>
+<ul>
+<li><a href="index.html">home</a></li>
+<li><a href="streams.html">streams</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<h3>Live On!</h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uG-bNcsDti4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+<div id="channel"></div>
+<script type="text/javascript">
+  var options = {
+    width: 440,
+    height: 440,
+    channel: "frankthepegasus",
+    
+  };
+  var player = new Twitch.Player("channel", options);
+  player.setVolume(0.5);
+</script>
+</main>
+<style>
+body{
+background-color:#f9a8f2;
+}
+h1{
+text-align: center;
+color: purple;
+font-size: 45px;
+}
+h3{
+position:absolute;
+font-size:25px;
+top:150px;
+left:650px;
+
+color: red;
+animation-name: colors;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+}
+@keyframes colors {
+0% {color: #ffc0cb; }
+50% {color: yellow; }
+100% {color: #98fffc; }
+}
+#icon{
+position:absolute;
+top: 50px;
+right:200px;
+}
+
+#channel{
+position:absolute;
+top:250px;
+left:650px;
+}
+</style>
+</html>
