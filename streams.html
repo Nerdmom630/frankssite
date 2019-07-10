@@ -28,6 +28,12 @@
   var player = new Twitch.Player("channel", options);
   player.setVolume(0.5);
 </script>
+ <div id="links">
+<p>Follow her here!</p>
+<i style='font-size:24px' class='fab'>&#xf081;<a href="https://twitter.com/FrankthePegasus">Frank</a></i>
+<i style='font-size:24px' class='fab'>&#xf16d;<a href="https://www.instagram.com/frankthepegasus/?hl=en">MoreFrank!</a></i>
+<i style='font-size:24px' class='fab'>&#xf1e8;<a href="https://www.twitch.tv/frankthepegasus">EvenMoreFrank!!</a></i>
+</div>                                         
 </main>
 <style>
 body{
@@ -59,12 +65,16 @@ animation-iteration-count: infinite;
 position:absolute;
 max-width:100%;
 height:auto;
-top: 50px;
-right:200px;
+top: 600px;
+right:150px;
 opacity: 0.2;
-z-index:2;
-}
 
+}
+#links{
+position:absolute;
+top: 800px;
+left:200px;
+}
 #channel{
 position:absolute;
 top:250px;
